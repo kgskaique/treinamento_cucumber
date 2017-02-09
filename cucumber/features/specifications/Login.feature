@@ -14,8 +14,8 @@ Cenario: realizar login com sucesso
  E clicar em logar
  Então devo ser direcionado para a pagina principal
 
-@login_invalido
 
+@login_invalido
 Cenario: realizar login invalido
 Dado que eu acesse o site da netshoes
 Quando eu clicar em logar
