@@ -1,16 +1,20 @@
 #language: pt
 
-Funcionalidade: Cadastro novo usuario
+Funcionalidade: Cadastro de usuario
+
 eu, como usuario novo da netshoes
-Desejo realizar o cadastro na loja
-Para realizar  compras
+Desejo realizar o cadastro
+Para realizar minhas compras
 
 
+@registros_cadastro
+@Cadastro
+Cenario: Cadastro  com sucesso
 
-@Cadastro_novo_usuario
-Cenario: realizar login com sucesso
-Dado que eu acesse o site da netshoes
-Quando eu clicar em logar
-E digitar seu email  -
-E clicar em continuar -
-Então será exibido a pagina para preencher seus dados pessoais -
+  Dado que eu acesse a pagina de login da netshoes
+  Quando eu passar um email novo
+  E clicar em continuar
+  E preencher os campos obrigatorios
+  E marcar a opção de aceito os termos de usuario
+  E clicar em cadastrar
+  Então o cadastro e realizado com sucesso.

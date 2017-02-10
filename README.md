@@ -16,6 +16,8 @@ git push = Envia para o repositório;
 git reset + arquivo = Tira de staging e volta para o local;
 git rm + arquivo = também remove o arquivo;
 ```
+Localizar o seletor $('#help-link')
+
 Criando projeto novo com cucumber;
 
 ``` ruby

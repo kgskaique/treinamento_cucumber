@@ -1,7 +1,7 @@
-#Quando(/^eu clicar em logar$/) do
+Quando(/^eu clicar em logar$/) do
    visit "/account/login.jsp"
      sleep 10
-# end
+ end
 
 E(/^passar o usuario e senha validos$/) do
  #find(:css, '#email-cpf').set("user")
@@ -16,7 +16,7 @@ Então(/^devo ser direcionado para a pagina principal$/) do
   expect(page).to have_selector :css, '.user-name'
  end
 
-#/////////////////////////////////////////////////////////////////
+
 
 #Login invalido
 
